@@ -84,7 +84,7 @@
         android:background="@drawable/corners"/>
 
     <Button
-        android:id="@+id/Electronicsncomm"
+        android:id="@+id/Electronics_n_comm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Electronics and Comm."
