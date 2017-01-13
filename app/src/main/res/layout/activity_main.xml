@@ -1,22 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_main2"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="app.techieni3.com.myapplication.MainActivity">
 
-    <TextView
-        android:id="@+id/text"
-        android:layout_width="wrap_content"
+
+    <Button
+        android:id="@+id/electronics"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TechieNi3 Solutions."
-        android:textSize="20sp"
-        android:textColor="#fff"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="80dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginRight="84dp"
-        android:layout_marginEnd="84dp" />
-</RelativeLayout>
+        android:text="Electronics"
+
+        android:textColor="#ffffff"
+        android:background="@drawable/corners"/>
+    <Button
+        android:id="@+id/it"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IT"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+
+        android:background="@drawable/corners"/>
+    <Button
+        android:id="@+id/computer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="computer"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/corners"/>
+    <Button
+        android:id="@+id/mech"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="mechanical"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/corners"/>
+    <Button
+        android:id="@+id/civil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="civil"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/corners"/>
+    <Button
+        android:id="@+id/chemical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="chemical"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/corners"/>
+    <Button
+        android:id="@+id/automobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="automobile"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corners"/>
+
+    <Button
+        android:id="@+id/Textile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Textile"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/corners"/>
+
+    <Button
+        android:id="@+id/Electronicsncomm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Electronics and Comm."
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corners"/>
+
+    <Button
+        android:id="@+id/Aeraunautics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aeraunautics"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/corners"/>
+</LinearLayout>
+</ScrollView>
