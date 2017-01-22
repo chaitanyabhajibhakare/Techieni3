@@ -28,6 +28,7 @@ public class Splash extends AppCompatActivity {
                             sleep(3*1001);
                             Intent i = new Intent(Splash.this,MainActivity.class);
                             startActivity(i);
+
                             finish();
 
                         }catch (Exception e){
