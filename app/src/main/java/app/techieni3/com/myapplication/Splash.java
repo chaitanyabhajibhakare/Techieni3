@@ -23,7 +23,7 @@ public class Splash extends AppCompatActivity {
 
         Thread th = new Thread(new Runnable() {
             @Override
-            public void run() {
+            public void run()  {
                         try {
                             sleep(3*1000);
                             Intent i = new Intent(Splash.this,MainActivity.class);
