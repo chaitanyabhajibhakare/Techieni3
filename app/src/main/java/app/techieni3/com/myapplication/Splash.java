@@ -12,14 +12,16 @@ import static java.lang.Thread.sleep;
 
 public class Splash extends AppCompatActivity {
 
-    TextView textView;
+    TextView textView1, textView2, textView3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        textView = (TextView) findViewById(R.id.text);
+        textView1 = (TextView) findViewById(R.id.text1);
+        textView2 = (TextView) findViewById(R.id.text2);
+        textView3 = (TextView) findViewById(R.id.text3);
 
         Thread th = new Thread(new Runnable() {
             @Override
@@ -43,9 +45,17 @@ public class Splash extends AppCompatActivity {
 
 
 
-        Animation myAnim = AnimationUtils.loadAnimation(Splash.this, R.anim.my_anim);
-        textView.setTypeface(tf);
-        textView.startAnimation(myAnim);
+        Animation  leftToRight = AnimationUtils.loadAnimation(Splash.this, R.anim.left_to_right);
+        textView1.setTypeface(tf);
+        textView1.startAnimation(leftToRight);
+
+        Animation upToDown = AnimationUtils.loadAnimation(Splash.this, R.anim.up_to_down);
+        textView2.setTypeface(tf);
+        textView2.startAnimation(upToDown);
+
+        Animation rightToLeft = AnimationUtils.loadAnimation(Splash.this, R.anim.right_to_left);
+        textView3.setTypeface(tf);
+        textView3.startAnimation(rightToLeft);
 
 
     }
