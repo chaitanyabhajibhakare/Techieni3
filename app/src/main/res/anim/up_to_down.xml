@@ -8,7 +8,7 @@
     <translate
         android:startOffset="1000"
         android:fromXDelta="20%p"
-        android:toXDelta="20%p"
+        android:toXDelta="+20%p"
         android:duration="1000" />
 
     <translate
