@@ -15,11 +15,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity" />
         <activity
-            android:name=".MainActivity"
-             />
-        <activity android:name=".Main2Activity"
-            android:label="View Pager"></activity>
+            android:name=".Main2Activity"
+            android:label="View Pager" />
+        <activity
+            android:name=".ActivityOnIt"
+            android:label="@string/title_activity_on_it"
+            android:theme="@style/CommonTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
