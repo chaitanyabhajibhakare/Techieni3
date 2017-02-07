@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="app.techieni3.com.myapplication">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,6 +25,9 @@
         <activity
             android:name=".ActivityOnIt"
             android:label="@string/title_activity_on_it"
+            android:theme="@style/CommonTheme.NoActionBar" />
+        <activity android:name=".PdfListActivity" />
+        <activity android:name=".PdfActivity"
             android:theme="@style/CommonTheme.NoActionBar"></activity>
     </application>
 

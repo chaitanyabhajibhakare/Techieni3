@@ -8,8 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
-    Button viewpageActivity, it;
-
+    Button viewpageActivity, it, computer;
 
 
     @Override
@@ -17,12 +16,13 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         viewpageActivity = (Button) findViewById(R.id.electronics);
-        it= (Button) findViewById(R.id.it);
+        it = (Button) findViewById(R.id.it);
+        computer = (Button) findViewById(R.id.computer);
 
         viewpageActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,Main2Activity.class);
+                Intent i = new Intent(MainActivity.this, Main2Activity.class);
                 startActivity(i);
             }
         });
@@ -31,12 +31,22 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
 
-
-                Intent i = new Intent(MainActivity.this,ActivityOnIt.class);
+                Intent i = new Intent(MainActivity.this, ActivityOnIt.class);
                 startActivity(i);
+
+            }
+        });
+        computer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i = new Intent(MainActivity.this,PdfListActivity.class);
+                startActivity(i);
+
 
 
             }
         });
+
     }
 }
