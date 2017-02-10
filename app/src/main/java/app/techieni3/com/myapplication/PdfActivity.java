@@ -21,9 +21,6 @@ public class PdfActivity extends ActionBarActivity {
 
         view = (PDFView) findViewById(R.id.pdfView);
 
-        next = (Button) findViewById(R.id.next);
-        previous = (Button) findViewById(R.id.previous);
-
         readPdf();
 
     }

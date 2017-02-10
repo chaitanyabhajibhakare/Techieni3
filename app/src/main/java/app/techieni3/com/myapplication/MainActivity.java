@@ -1,12 +1,12 @@
 package app.techieni3.com.myapplication;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends Activity {
+public class MainActivity extends ActionBarActivity {
 
     Button viewpageActivity, it, computer;
 

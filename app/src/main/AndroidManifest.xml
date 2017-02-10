@@ -11,7 +11,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/CommonTheme">
-        <activity android:name=".Splash">
+        <activity android:name=".Splash"
+            android:theme="@style/CommonTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
